@@ -4,7 +4,7 @@
 
 	<groupId>io.github.emays</groupId>
 	<artifactId>parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>pom</packaging>
 
 	<name>Common Parent</name>
@@ -31,7 +31,8 @@
 	<scm>
 		<url>https://www.github.com/emays/parent</url>
 		<developerConnection>scm:git:https://www.github.com/emays/parent</developerConnection>
-	</scm>
+	  <tag>parent-0.0.1</tag>
+  </scm>
 	<distributionManagement>
 		<repository>
 			<id>github</id>
@@ -553,7 +554,7 @@
 												</goals>
 											</pluginExecutionFilter>
 											<action>
-												<ignore></ignore>
+												<ignore />
 											</action>
 										</pluginExecution>
 									</pluginExecutions>
