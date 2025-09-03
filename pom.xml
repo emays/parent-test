@@ -36,6 +36,10 @@
 		</repository>
 	</distributionManagement>
 
+	<scm>
+		<url>https://www.github.com/emays/parent</url>
+	</scm>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>21</java.version>
