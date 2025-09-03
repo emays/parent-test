@@ -28,6 +28,10 @@
 		</developer>
 	</developers>
 
+	<scm>
+		<url>https://www.github.com/emays/parent</url>
+		<developerConnection>scm:git:https://www.github.com/emays/parent</developerConnection>
+	</scm>
 	<distributionManagement>
 		<repository>
 			<id>github</id>
@@ -35,11 +39,6 @@
 			<url>https://maven.pkg.github.com/emays/parent</url>
 		</repository>
 	</distributionManagement>
-
-	<scm>
-		<url>https://www.github.com/emays/parent</url>
-		<developerConnection>scm:git:https://www.github.com/emays/parent</developerConnection>
-	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
