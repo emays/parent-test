@@ -34,5 +34,5 @@ jobs:
         mvn release:prepare release:perform -B -s $GITHUB_WORKSPACE/settings.xml -Pgpg-sign
       env:
         GITHUB_TOKEN: ${{ github.token }}
-		MAVEN_GPG_KEY: ${{secrets.GPG_KEY}}
-		MAVEN_GPG_PASSPHRASE: ${{secrets.GPG_PASSPHRASE}}
+        MAVEN_GPG_KEY: ${{secrets.GPG_KEY}}
+        MAVEN_GPG_PASSPHRASE: ${{secrets.GPG_PASSPHRASE}}
