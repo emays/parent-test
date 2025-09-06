@@ -29,8 +29,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B verify --file pom.xml -Pgpg-sign
       env:
-        gpg_key: ${{secrets.GPG_KEY}}
-        gpg_passphrase: ${{secrets.GPG_PASSPHRASE}}
+        maven_gpg_key: ${{secrets.GPG_KEY}}
+        maven_gpg_passphrase: ${{secrets.GPG_PASSPHRASE}}
 
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
