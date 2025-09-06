@@ -531,6 +531,7 @@
 							</execution>
 						</executions>
 						<configuration>
+							<signer>bc</signer>
 							<gpgArguments>
 								<argument>--pinentry-mode</argument>
 								<argument>loopback</argument>
