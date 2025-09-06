@@ -31,6 +31,8 @@ jobs:
     - name: Publish to GitHub Packages Apache Maven
       run: |
         git config --global url.https://${{ github.token }}@github.com/.insteadOf https://www.github.com/
-        mvn release:prepare release:perform -B -s $GITHUB_WORKSPACE/settings.xml
+        mvn release:prepare release:perform -B -s $GITHUB_WORKSPACE/settings.xml -Pgpg-sign
       env:
         GITHUB_TOKEN: ${{ github.token }}
+		MAVEN_GPG_KEY: ${{secrets.GPG_KEY}}
+		MAVEN_GPG_PASSPHRASE: ${{secrets.GPG_PASSPHRASE}}
