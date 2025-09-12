@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.github.emays</groupId>
-	<artifactId>parent</artifactId>
+	<artifactId>parent-test</artifactId>
 	<version>0.0.7-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Common Parent</name>
 	<description>Parent for common dependencies and plugins</description>
-	<url>https://github.com/emays/parent</url>
+	<url>https://github.com/emays/parent-test</url>
 	<inceptionYear>2021</inceptionYear>
 	<organization>
 		<name>Mays Systems LLC</name>
@@ -28,16 +28,16 @@
 	</developers>
 
 	<scm>
-		<connection>https://www.github.com/emays/parent</connection>
-		<developerConnection>scm:git:https://www.github.com/emays/parent</developerConnection>
-		<url>https://www.github.com/emays/parent</url>
+		<connection>https://www.github.com/emays/parent-test</connection>
+		<developerConnection>scm:git:https://www.github.com/emays/parent-test</developerConnection>
+		<url>https://www.github.com/emays/parent-test</url>
 		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/emays/parent</url>
+			<url>https://maven.pkg.github.com/emays/parent-test</url>
 		</repository>
 	</distributionManagement>
 
