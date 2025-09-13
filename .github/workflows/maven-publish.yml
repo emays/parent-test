@@ -35,7 +35,11 @@ jobs:
 #        MAVEN_GPG_PASSPHRASE: ${{secrets.GPG_PASSPHRASE}}
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml -Pgpg-sign
+      run: |
+        mvn deploy -B \
+            -s $GITHUB_WORKSPACE/settings.xml \
+            -Pgpg-sign \
+            -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
       env:
         GITHUB_TOKEN: ${{ github.token }}
         MAVEN_GPG_KEY: ${{secrets.GPG_KEY}}
