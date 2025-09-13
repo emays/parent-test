@@ -4,7 +4,7 @@
 
 	<groupId>io.github.emays</groupId>
 	<artifactId>parent-test</artifactId>
-	<version>0.0.7-SNAPSHOT</version>
+	<version>0.0.7</version>
 	<packaging>pom</packaging>
 
 	<name>Common Parent</name>
@@ -31,7 +31,7 @@
 		<connection>https://www.github.com/emays/parent-test</connection>
 		<developerConnection>scm:git:https://www.github.com/emays/parent-test</developerConnection>
 		<url>https://www.github.com/emays/parent-test</url>
-		<tag>HEAD</tag>
+		<tag>parent-test-0.0.7</tag>
 	</scm>
 	<distributionManagement>
 		<repository>
