@@ -4,7 +4,7 @@
 
 	<groupId>io.github.emays</groupId>
 	<artifactId>parent-test</artifactId>
-	<version>0.0.10-SNAPSHOT</version>
+	<version>0.0.11-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Common Parent</name>
