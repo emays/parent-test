@@ -29,7 +29,7 @@
 
 	<scm>
 <!--		<connection>https://www.github.com/emays/parent-test</connection>-->
-		<developerConnection>scm:git:git://www.github.com/emays/parent-test</developerConnection>
+		<developerConnection>scm:git:ssh://www.github.com/emays/parent-test</developerConnection>
 		<url>https://www.github.com/emays/parent-test</url>
 		<tag>HEAD</tag>
 	</scm>
