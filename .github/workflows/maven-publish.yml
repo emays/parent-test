@@ -25,14 +25,6 @@ jobs:
         cache: maven
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
-        gpg-private-key: ${{secrets.GPG_KEY}} # not needed for BC
-        gpg-passphrase: MAVEN_GPG_PASSPHRASE # not needed for BC
-
-#    - name: Build with Maven
-#      run: mvn -B verify --file pom.xml -Pgpg-sign
-#      env:
-#        MAVEN_GPG_KEY: ${{secrets.GPG_KEY}}
-#        MAVEN_GPG_PASSPHRASE: ${{secrets.GPG_PASSPHRASE}}
 
     - name: Publish to GitHub Packages Apache Maven
       run: |
