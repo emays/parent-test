@@ -31,7 +31,7 @@ jobs:
 
     - name: Release to GitHub Packages Apache Maven
       run: |
-        git config --global url.https://${{ github.token }}@github.com/.insteadOf https://www.github.com/
+#        git config --global url.https://${{ github.token }}@github.com/.insteadOf https://www.github.com/
         mvn release:prepare release:perform -B \
             -Pgithub-packages \
             -Pgpg-sign \
