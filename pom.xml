@@ -75,6 +75,7 @@
 		<tidy-maven-plugin.version>1.4.0</tidy-maven-plugin.version>
 		<versions-maven-plugin.version>2.18.0</versions-maven-plugin.version>
 		<!-- other plugins -->
+		<central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
 		<jgitflow-maven-plugin.version>1.0-m5.1</jgitflow-maven-plugin.version>
 	</properties>
 
@@ -338,6 +339,11 @@
 				</plugin>
 				<!-- other plugins -->
 				<plugin>
+					<groupId>org.sonatype.central</groupId>
+					<artifactId>central-publishing-maven-plugin</artifactId>
+					<version>${central-publishing-maven-plugin.version}</version>
+				</plugin>
+				<plugin>
 					<groupId>external.atlassian.jgitflow</groupId>
 					<artifactId>jgitflow-maven-plugin</artifactId>
 					<version>${jgitflow-maven-plugin.version}</version>
@@ -539,6 +545,24 @@
 								<argument>--yes</argument>
 								<argument>--verbose</argument>
 							</gpgArguments>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>maven-central</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.sonatype.central</groupId>
+						<artifactId>central-publishing-maven-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<publishingServerId>central</publishingServerId>
+							<autoPublish>true</autoPublish>
+							<waitUntil>published</waitUntil>
+							<skipPublishing>true</skipPublishing>
 						</configuration>
 					</plugin>
 				</plugins>
